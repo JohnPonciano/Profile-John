@@ -21,9 +21,6 @@ const Main = ({ children, router }) => {
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="twitter:title" content="Jonathan Ponciano" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@hakku001" />
-        <meta name="twitter:creator" content="@hakku001" />
         <meta property="og:site_name" content="Jonathan Ponciano" />
         <meta name="og:title" content="Jonathan Ponciano" />
         <meta property="og:type" content="website" />
