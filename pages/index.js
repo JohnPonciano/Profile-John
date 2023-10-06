@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, EmailIcon, PhoneIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -126,9 +126,26 @@ const Home = () => (
         </BioSection>
       </Section>
 
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Skills
+        </Heading>
+        <BioSection>
+          <BioYear>Linguagens:</BioYear>
+          HTML/CSS,Python/Django,Javascript/Nodejs/Next.js,MySQL,Postgres,Bash,Powershell
+        </BioSection>
+        <br></br>
+        <BioSection>
+          <BioYear>Um pouco além do básico:</BioYear>
+          Conhecimento intermediario de Redes,Docker e servidores Linux, Windows.
+          AWS,GCP,GIT e boas noções de Cibersegurança.
+        </BioSection>
+        
+      </Section>
+
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          Na internet
+          Onde me encontrar e Contato
         </Heading>
         <List>
           <ListItem>
@@ -154,13 +171,24 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.instagram.com/one_eye_nigth/" target="_blank">
+            <Link href="jonathan.ponciano@icloud.com" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<EmailIcon />}
               >
                 jonathan.ponciano@icloud.com
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://api.whatsapp.com/send?phone=5511988661865" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<PhoneIcon />}
+              >
+                Whatsapp: (11)988661865
               </Button>
             </Link>
           </ListItem>
