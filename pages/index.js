@@ -75,20 +75,28 @@ const Home = () => (
           Sobre mim
         </Heading>
         <Paragraph>
-        Fase 1: Suporte, Infraestrutura e Segurança (2 anos)
+
+        <BioSection>
+          <BioYear>Fase 1 - Suporte, Infraestrutura e Segurança (2 anos) </BioYear>
+        <br></br>
         Nesta fase inicial da minha carreira, atuei principalmente em funções relacionadas ao suporte, infraestrutura e segurança. Durante esse período de dois anos, adquiri conhecimentos e experiência em administrar servidores e trabalhar com questões de segurança SOC/SIEM. 
         Essa experiência sólida estabeleceu uma base valiosa para a minha carreira posterior como desenvolvedor de software.
-        {' '}
-        Fase 2: Desenvolvedor de Software (1 ano)
-        Após os primeiros dois anos, fiz a transição para o papel de desenvolvedor de software. 
+        </BioSection>
+
+        <BioSection>
+          <BioYear>Fase 2 - Desenvolvedor de Software (1 ano)</BioYear>
+          <br></br>
+          Após os primeiros dois anos, fiz a transição para o papel de desenvolvedor de software. 
         Durante esse período de um ano, especializei-me em tecnologias como Python, Django/Flask e Node.js. 
-        Trabalhei na Accenture, onde desenvolvi APIs em Python em ambientes AWS/GCP. 
+        Trabalhei na Accenture, onde desenvolvi APIs em Python em ambientes AWS/GCP.
+        <br></br> 
         Também adquiri conhecimentos em CI/CD, usando ferramentas como Jenkins e Rancher, além de habilidades em monitoramento de aplicações com Grafana. 
         Minha paixão por desafios técnicos e minha busca contínua por aprendizado me tornam um desenvolvedor flexível e sempre disposto a enfrentar novos desafios. 
         Estou disponível para colaborar em projetos inovadores e equipes diversificadas.
-         
+        </BioSection>
          {' '}
         </Paragraph>
+
         <Box align="center" my={4}>
           <Button
             as={NextLink}
