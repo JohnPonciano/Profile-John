@@ -75,13 +75,19 @@ const Home = () => (
           Sobre mim
         </Heading>
         <Paragraph>
-        Desenvolvedor de Software Flexível e obcecado por Aprender, 
-        apaixonado por desafios técnicos. Especialista em Python, 
-        Django/Flask e Node.js, com sólida experiência em administração de servidores
-         e segurança SOC/SIEM. Trabalhei na Accenture, 
-         onde desenvolvi APIs em Python em ambientes AWS/GCP.
-        Estou constantemente buscando aprimorar minhas habilidades e expandir meu conhecimento. Disponível para colaborar em projetos inovadores e equipes diversificadas. Tenho noções CI/CD (Jenkins, Rancher),
-         e monitoramento de aplicações (Grafana).{' '}
+        Fase 1: Suporte, Infraestrutura e Segurança (2 anos)
+        Nesta fase inicial da minha carreira, atuei principalmente em funções relacionadas ao suporte, infraestrutura e segurança. Durante esse período de dois anos, adquiri conhecimentos e experiência em administrar servidores e trabalhar com questões de segurança SOC/SIEM. 
+        Essa experiência sólida estabeleceu uma base valiosa para a minha carreira posterior como desenvolvedor de software.
+        {' '}
+        Fase 2: Desenvolvedor de Software (1 ano)
+        Após os primeiros dois anos, fiz a transição para o papel de desenvolvedor de software. 
+        Durante esse período de um ano, especializei-me em tecnologias como Python, Django/Flask e Node.js. 
+        Trabalhei na Accenture, onde desenvolvi APIs em Python em ambientes AWS/GCP. 
+        Também adquiri conhecimentos em CI/CD, usando ferramentas como Jenkins e Rancher, além de habilidades em monitoramento de aplicações com Grafana. 
+        Minha paixão por desafios técnicos e minha busca contínua por aprendizado me tornam um desenvolvedor flexível e sempre disposto a enfrentar novos desafios. 
+        Estou disponível para colaborar em projetos inovadores e equipes diversificadas.
+         
+         {' '}
         </Paragraph>
         <Box align="center" my={4}>
           <Button
