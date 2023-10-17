@@ -16,12 +16,15 @@ import {
         <Title>
         InetChat-TCP<Badge>2023</Badge>
         </Title>
+        
         <P>
         Pequeno sistema de chat tcp, com suporte ao ngrok
         </P>
+
         <P>
           Você pode dar uma olhada nele no meu github junto com a documentação!
         </P>
+
         <List ml={4} my={4}>
           
           <ListItem>
@@ -36,8 +39,10 @@ import {
             <span>Python, Sockets, Ngrok</span>
           </ListItem>
         </List>
+
         <WorkImage  src="/images/works/newimg/InetCHAT.png" alt="InetChat" />
         <WorkImage  src="/images/works/newimg/InetCHAT2.png" alt="InetChat" />
+
       </Container>
     </Layout>
   )
