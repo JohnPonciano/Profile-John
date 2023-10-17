@@ -74,7 +74,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Sobre mim
         </Heading>
-        <Paragraph>
+        <Section>
 
         <BioSection>
           <BioYear>Fase 1 - Suporte, Infraestrutura e Segurança (2 anos) </BioYear>
@@ -95,7 +95,7 @@ const Home = () => (
         Estou disponível para colaborar em projetos inovadores e equipes diversificadas.
         </BioSection>
          {' '}
-        </Paragraph>
+        </Section>
 
         <Box align="center" my={4}>
           <Button

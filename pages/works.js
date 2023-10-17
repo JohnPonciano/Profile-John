@@ -6,6 +6,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbLofiCenter from '../public/images/works/newimg/loficenter.png'
 import thumbWalknote from '../public/images/works/newimg/hakku-C2.png'
 import thumbFourPainters from '../public/images/works/newimg/walletpass.png'
+import thumbInetTCP from '../public/images/works/newimg/InetCHAT.png'
 
 
 const Works = () => (
@@ -16,11 +17,13 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+
         <Section>
           <WorkGridItem id="inkdrop" title="LofiCenter" thumbnail={thumbLofiCenter}>
             Mini radio Lofi, que roda localmente 
           </WorkGridItem>
         </Section>
+
         <Section>
           <WorkGridItem
             id="walknote"
@@ -41,12 +44,16 @@ const Works = () => (
             Armazena e criptografa suas senhas, em um banco de dados.
           </WorkGridItem>
         </Section>
-        {/* <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="inetpy"
+            title="InetChat-TCP"
+            thumbnail={thumbInetTCP}
+          >
+            Pequeno sistema de chat tcp, com suporte ao ngrok
           </WorkGridItem>
-        </Section> */}
+        </Section>
       </SimpleGrid>
 
 
