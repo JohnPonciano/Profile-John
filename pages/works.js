@@ -7,7 +7,7 @@ import thumbLofiCenter from '../public/images/works/newimg/loficenter.png'
 import thumbWalknote from '../public/images/works/newimg/hakku-C2.png'
 import thumbFourPainters from '../public/images/works/newimg/walletpass.png'
 import thumbInetTCP from '../public/images/works/newimg/InetCHAT.png'
-
+import thumbWordpressProject from '../public/images/works/newimg/wordpressproject.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -41,7 +41,7 @@ const Works = () => (
             title="Wallet-Pass"
             thumbnail={thumbFourPainters}
           >
-            Armazena e criptografa suas senhas, em um banco de dados.
+            Armazena e criptografa suas senhas, uma carteira de senhas seguras
           </WorkGridItem>
         </Section>
 
@@ -53,6 +53,19 @@ const Works = () => (
           >
             Pequeno sistema de chat tcp, com suporte ao ngrok
           </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+
+          <WorkGridItem
+          id="wordpressproject"  
+          title="Thanks Mother Nature"
+          thumbnail={thumbWordpressProject}
+          >
+            Como o WordPress não é extensivamente usado no meio de desenvolvimento, 
+            criei este projeto rápido e elegante para demonstrar como pode ser útil para pequenos projetos.
+          </WorkGridItem>
+
         </Section>
         
       </SimpleGrid>
