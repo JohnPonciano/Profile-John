@@ -8,6 +8,7 @@ import thumbWalknote from '../public/images/works/newimg/hakku-C2.png'
 import thumbFourPainters from '../public/images/works/newimg/walletpass.png'
 import thumbInetTCP from '../public/images/works/newimg/InetCHAT.png'
 import thumbWordpressProject from '../public/images/works/newimg/wordpressproject.png'
+import thumbWordpressProject2 from '../public/images/works/newimg/wordpressproject2.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -65,6 +66,19 @@ const Works = () => (
             Como o WordPress não é extensivamente usado no meio de desenvolvimento, 
             criei este projeto rápido e elegante para demonstrar como pode ser útil para pequenos projetos.
           </WorkGridItem>
+
+        </Section>
+
+        <Section delay={0.1}>
+
+        <WorkGridItem
+        id="wordpressproject2"  
+        title="Kuvshnov Gallery"
+        thumbnail={thumbWordpressProject2}
+        >
+          Foi apenas um experimento um pouco mais minimalista e artistico, 
+      onde eu crio uma pequena galeria para um dos meu artistas preferidos atuais.pequenos projetos.
+        </WorkGridItem>
 
         </Section>
         
