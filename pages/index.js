@@ -32,7 +32,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, Sou um dev iniciante!
+        Hello, Sou um dev backend e apaixonado por programação e culinária.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -40,7 +40,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Jonathan Ponciano
           </Heading>
-          <p>Backend Developer Junior( Cozinhar / Programar / Jogar )</p>
+          <p>Backend Developer ( Programar e Cozinhar )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -73,29 +73,39 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Sobre mim
         </Heading>
-        <Section>
 
         <BioSection>
-          <BioYear>Fase 1 - Suporte, Infraestrutura e Segurança (2 anos) </BioYear>
-        <br></br>
-        Nesta fase inicial da minha carreira, atuei principalmente em funções relacionadas ao suporte, infraestrutura e segurança. Durante esse período de dois anos, adquiri conhecimentos e experiência em administrar servidores e trabalhar com questões de segurança SOC/SIEM. 
-        Essa experiência sólida estabeleceu uma base valiosa para a minha carreira posterior como desenvolvedor de software.
+          <BioYear>Fase 1: Suporte & Infraestrutura (2019 - 2021)</BioYear>
+          <p>
+            Minha jornada começou na <strong>Singular Studio Criativo</strong>, onde explorei o desenvolvimento pela primeira vez. Ali, aprendi não só aspectos técnicos, mas também a importância do trabalho em equipe e comunicação.
+          </p>
+          <p>
+            Depois, na <strong>Prefeitura da Estância Turística de Itu</strong>, dei o próximo passo, oferecendo suporte e infraestrutura. Também aprofundei meus conhecimentos em servidores, segurança e práticas de DevOps, solidificando minha base em TI.
+          </p>
         </BioSection>
 
         <BioSection>
-          <BioYear>Fase 2 - Desenvolvedor de Software (1 ano)</BioYear>
-          <br></br>
-          Após os primeiros dois anos, fiz a transição para o papel de desenvolvedor de software. 
-        Durante esse período de um ano, especializei-me em tecnologias como Python, Django/Flask e Node.js. 
-        Trabalhei na Accenture, onde desenvolvi APIs em Python em ambientes AWS/GCP.
-        <br></br> 
-        Também adquiri conhecimentos em CI/CD, usando ferramentas como Jenkins e Rancher, além de habilidades em monitoramento de aplicações com Grafana. 
-        Minha paixão por desafios técnicos e minha busca contínua por aprendizado me tornam um desenvolvedor flexível e sempre disposto a enfrentar novos desafios. 
-        Estou disponível para colaborar em projetos inovadores e equipes diversificadas.
+          <BioYear>Fase 2: Desenvolvimento de Software (2021 - 2022)</BioYear>
+          <p>
+            Transição para o mundo do <strong>desenvolvimento de software</strong>, com foco em tecnologias como Python, Django, Node.js e APIs. Durante esse ano, trabalhei na <strong>Accenture</strong>, onde desenvolvi soluções em ambientes AWS/GCP.
+          </p>
+          <p>
+            Além disso, adquiri experiência em CI/CD com Jenkins, Rancher e ferramentas de monitoramento como Grafana. Aprimorei minhas habilidades técnicas enquanto aprendi a lidar com desafios complexos e a buscar sempre a melhor solução.
+          </p>
         </BioSection>
-         {' '}
-        </Section>
 
+        <BioSection>
+          <BioYear>Fase 3: O Futuro</BioYear>
+          <p>
+            Estou sempre em busca de inovação e novos desafios. Hoje, além de backend, estou focado em áreas emergentes como inteligência artificial e soluções para pontos de venda (PDVs) com <strong>Bitcoin</strong>.
+          </p>
+          <p>
+            Com um olhar no futuro, estou pronto para colaborar em projetos que unem tecnologia de ponta e soluções criativas. Se você também tem uma visão inovadora, vamos conversar!
+          </p>
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}> 
         <Box align="center" my={4}>
           <Button
             as={NextLink}
@@ -110,50 +120,73 @@ const Home = () => (
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>1999</BioYear>
-          Nasci em Itu - São Paulo
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-          Trabalhei na Singular Studio Criativo.
-          Foi minha primeira experiencia com desenvolvimento, 
-          cresci muito e aprendi bastante não só desenvolvimento mas a lidar com pessoas.
-        </BioSection>
-        <br></br>
-        <BioSection>
-          <BioYear>2020</BioYear>
-          Tabalhei da Prefeitura da Instancia Turisca de Itu
-          Além de fornecer suporte e infraestrutura, aprendi muito sobre servidores, 
-          segurança e DevOps no geral.
-        </BioSection>
-        <br></br>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          Trabalhei na Accenture Brasil, como desenvolvedor Backend Python.
-          Foi uma experiencia incrivel poder trabalhar em uma empresa gigante,
-          onde pude desenvolver e entender como grandes empresas funcionam.
-        </BioSection>
-      </Section>
+          <Heading as="h3" variant="section-title">
+            Bio
+          </Heading>
+          
+          <BioSection>
+            <BioYear>1999</BioYear>
+            Nasci em Itu - São Paulo
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2019</BioYear>
+            Trabalhei na <strong>Singular Studio Criativo</strong>. Foi minha primeira experiência com desenvolvimento, onde cresci muito e aprendi bastante, não só no aspecto técnico, mas também em como lidar com pessoas e comunicação em equipe.
+          </BioSection>
+          <br />
+          
+          <BioSection>
+            <BioYear>2020</BioYear>
+            Trabalhei na <strong>Prefeitura da Estância Turística de Itu</strong>. Além de fornecer suporte e infraestrutura, aprendi muito sobre servidores, segurança e práticas de DevOps.
+          </BioSection>
+          <br />
+          
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Trabalhei na <strong>Accenture Brasil</strong>, como desenvolvedor Backend Python. Foi uma experiência incrível poder trabalhar em uma empresa gigante, onde pude desenvolver e entender como grandes empresas funcionam.
+          </BioSection>
+          <br />
+          
+          <BioSection>
+            <BioYear>2024 - Presente</BioYear>
+            Atualmente, trabalho na <strong>Medens</strong>, onde faço manutenção e desenvolvimento de projetos em <strong>Laravel/PHP</strong>. Também estou envolvido em iniciativas de <strong>Inteligência Artificial (IA)</strong>, aplicando minhas habilidades para melhorar a eficiência e inovação dos sistemas em que trabalho.
+          </BioSection>
+        </Section>
+
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Skills
-        </Heading>
-        <BioSection>
-          <BioYear>Linguagens:</BioYear>
-          HTML/CSS,Python/Django,Javascript/Nodejs/Next.js,MySQL,Postgres,Bash,Powershell
-        </BioSection>
-        <br></br>
-        <BioSection>
-          <BioYear>Um pouco além do básico:</BioYear>
-          Conhecimento intermediario de Redes,Docker e servidores Linux, Windows.
-          AWS,GCP,GIT e boas noções de Cibersegurança.
-        </BioSection>
-        
+      <Heading as="h3" variant="section-title">
+    Skills
+  </Heading>
+  
+  <BioSection>
+    <BioYear>Linguagens e Frameworks</BioYear>
+    <p>HTML/CSS, Python (Django/Flask), JavaScript (Node.js/Next.js), PHP (Laravel), MySQL, PostgreSQL, Bash, PowerShell</p>
+  </BioSection>
+  <br />
+  
+  <BioSection>
+    <BioYear>Ferramentas e Tecnologias</BioYear>
+    <p>Docker, CI/CD (Jenkins, Rancher), AWS, GCP, Git, Grafana, Redis, RabbitMQ</p>
+  </BioSection>
+  <br />
+
+  <BioSection>
+    <BioYear>Práticas de DevOps e Infraestrutura</BioYear>
+    <p>Configuração e manutenção de servidores Linux/Windows, automação de deploy, monitoramento de aplicações, práticas de segurança (Cibersegurança)</p>
+  </BioSection>
+  <br />
+  
+  <BioSection>
+    <BioYear>Inteligência Artificial</BioYear>
+    <p>Experiência com algoritmos de IA e machine learning, implementação de soluções inteligentes e automação de processos.</p>
+  </BioSection>
+  <br />
+  
+  <BioSection>
+    <BioYear>Outras Competências</BioYear>
+    <p>Suporte e infraestrutura, gerenciamento de projetos, trabalho em equipe, comunicação eficaz, resolução de problemas técnicos complexos.</p>
+  </BioSection>
       </Section>
 
       <Section delay={0.3}>
@@ -184,7 +217,7 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="jonathan.ponciano@icloud.com" target="_blank">
+            <Link href="mailto:jonathan.ponciano@icloud.com" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"

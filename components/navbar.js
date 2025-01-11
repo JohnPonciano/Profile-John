@@ -80,7 +80,7 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="https://johnponciano.github.io/simplesescovadordebits/public/">Blog</LinkItem>
+          {/* <LinkItem href="https://johnponciano.github.io/simplesescovadordebits/public/">Blog</LinkItem> */}
           <LinkItem
             target="_blank"
             href="#"

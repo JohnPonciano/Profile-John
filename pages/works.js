@@ -3,12 +3,12 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbLofiCenter from '../public/images/works/newimg/loficenter.png'
-import thumbWalknote from '../public/images/works/newimg/hakku-C2.png'
+
 import thumbFourPainters from '../public/images/works/newimg/walletpass.png'
 import thumbInetTCP from '../public/images/works/newimg/InetCHAT.png'
 import thumbWordpressProject from '../public/images/works/newimg/wordpressproject.png'
 import thumbWordpressProject2 from '../public/images/works/newimg/wordpressproject2.png'
+import medensproject from '../public/images/works/newimg/medensproject.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -17,22 +17,16 @@ const Works = () => (
         Works
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-
-        <Section>
-          <WorkGridItem id="inkdrop" title="LofiCenter" thumbnail={thumbLofiCenter}>
-            Mini radio Lofi, que roda localmente 
-          </WorkGridItem>
-        </Section>
+      <SimpleGrid columns={[1, 1, 1
+      ]} gap={6}>
 
         <Section>
           <WorkGridItem
-            id="walknote"
-            title="Hakku-C2"
-            thumbnail={thumbWalknote}
+            id="medensproject"
+            title="Medens"
+            thumbnail={medensproject}
           >
-            Um app que estou desenvolvendo no momento, que funciona semelhante a SIEM, 
-            puxando e armazenando dados das maquinas que possui seu Agent
+            Um novo respiro para uma nosa marca
           </WorkGridItem>
         </Section>
 
