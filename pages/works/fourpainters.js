@@ -14,6 +14,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => (
   <Layout title="Wallet-Pass">
+    <Analytics />
     <Container>
       <Title>
         Wallet-Pass <Badge>2023</Badge>

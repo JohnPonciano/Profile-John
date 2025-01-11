@@ -16,7 +16,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
-
+import { Analytics } from "@vercel/analytics/react"
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
@@ -70,6 +70,7 @@ const Home = () => (
       </Box>
 
       <Section delay={0.1}>
+        <Analytics />
         <Heading as="h3" variant="section-title">
           Sobre mim
         </Heading>

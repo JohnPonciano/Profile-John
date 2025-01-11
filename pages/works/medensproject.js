@@ -14,10 +14,12 @@ import {
 
   const Work = () => (
     <Layout title="Medens Site">
+      <Analytics />
       <Container>
         <Title>
           Medens <Badge>2024</Badge>
         </Title>
+        
         <P>
         Meu projeto mais recente, o grande desafio foi criar uma inferce visual, que refletisse o novo respiro da marca.
         </P>

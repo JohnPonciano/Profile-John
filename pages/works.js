@@ -12,6 +12,7 @@ import medensproject from '../public/images/works/newimg/medensproject.png'
 
 const Works = () => (
   <Layout title="Works">
+    <Analytics />
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Works
