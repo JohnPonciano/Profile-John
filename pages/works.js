@@ -2,7 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
+import { Analytics } from "@vercel/analytics/react"
 
 import thumbFourPainters from '../public/images/works/newimg/walletpass.png'
 import thumbInetTCP from '../public/images/works/newimg/InetCHAT.png'

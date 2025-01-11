@@ -11,7 +11,7 @@ import {
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
   import Layout from '../../components/layouts/article'
-
+  import { Analytics } from "@vercel/analytics/react"
   const Work = () => (
     <Layout title="Medens Site">
       <Analytics />
