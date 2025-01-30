@@ -14,7 +14,7 @@ import { ChevronRightIcon, EmailIcon, PhoneIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io5'
 import Image from 'next/image'
 import { Analytics } from "@vercel/analytics/react"
 const ProfileImage = chakra(Image, {
@@ -76,34 +76,18 @@ const Home = () => (
         </Heading>
 
         <BioSection>
-          <BioYear>Fase 1: Suporte & Infraestrutura (2019 - 2021)</BioYear>
           <p>
-            Minha jornada começou na <strong>Singular Studio Criativo</strong>, onde explorei o desenvolvimento pela primeira vez. Ali, aprendi não só aspectos técnicos, mas também a importância do trabalho em equipe e comunicação.
-          </p>
-          <p>
-            Depois, na <strong>Prefeitura da Estância Turística de Itu</strong>, dei o próximo passo, oferecendo suporte e infraestrutura. Também aprofundei meus conhecimentos em servidores, segurança e práticas de DevOps, solidificando minha base em TI.
-          </p>
+          Sou desenvolvedor de software e especialista em segurança da informação com experiência sólida em
+programação, análise de vulnerabilidades e implementação de soluções tecnológicas para empresas. 
+</p>
+<p>Minha trajetória começou em datacenters, o que me deu uma base prática em infraestrutura de TI, evoluindo para projetos que integram sistemas de alta performance e segurança.</p>
+        <br></br>
+        <p>
+        Trabalho com desenvolvimento de sites/softwares, configuração de ERPs , implementação de pontos de
+venda com suporte a pagamentos em Bitcoin e otimização de processos para negócios. Meu foco é entregar soluções personalizadas, práticas e inovadoras que atendam às necessidades dos clientes.
+        </p>
         </BioSection>
-
-        <BioSection>
-          <BioYear>Fase 2: Desenvolvimento de Software (2021 - 2022)</BioYear>
-          <p>
-            Transição para o mundo do <strong>desenvolvimento de software</strong>, com foco em tecnologias como Python, Django, Node.js e APIs. Durante esse ano, trabalhei na <strong>Accenture</strong>, onde desenvolvi soluções em ambientes AWS/GCP.
-          </p>
-          <p>
-            Além disso, adquiri experiência em CI/CD com Jenkins, Rancher e ferramentas de monitoramento como Grafana. Aprimorei minhas habilidades técnicas enquanto aprendi a lidar com desafios complexos e a buscar sempre a melhor solução.
-          </p>
-        </BioSection>
-
-        <BioSection>
-          <BioYear>Fase 3: O Futuro</BioYear>
-          <p>
-            Estou sempre em busca de inovação e novos desafios. Hoje, além de backend, estou focado em áreas emergentes como inteligência artificial e soluções para pontos de venda (PDVs) com <strong>Bitcoin</strong>.
-          </p>
-          <p>
-            Com um olhar no futuro, estou pronto para colaborar em projetos que unem tecnologia de ponta e soluções criativas. Se você também tem uma visão inovadora, vamos conversar!
-          </p>
-        </BioSection>
+        <br></br>
       </Section>
 
       <Section delay={0.3}> 
@@ -126,31 +110,28 @@ const Home = () => (
           </Heading>
           
           <BioSection>
-            <BioYear>1999</BioYear>
-            Nasci em Itu - São Paulo
-          </BioSection>
-
-          <BioSection>
-            <BioYear>2019</BioYear>
-            Trabalhei na <strong>Singular Studio Criativo</strong>. Foi minha primeira experiência com desenvolvimento, onde cresci muito e aprendi bastante, não só no aspecto técnico, mas também em como lidar com pessoas e comunicação em equipe.
-          </BioSection>
-          <br />
-          
-          <BioSection>
             <BioYear>2020</BioYear>
             Trabalhei na <strong>Prefeitura da Estância Turística de Itu</strong>. Além de fornecer suporte e infraestrutura, aprendi muito sobre servidores, segurança e práticas de DevOps.
+            Gerenciamento de infraestrutura e segurança cibernética, supervisionando servidores em vmware, implementando soluções SOC/SIEM, garantindo a conformidade e otimizando sistemas.
+            Forneci suporte para operações seguras, garantindo o bom funcionamento dos sistemas de TI.
+            Colaborei com equipes multifuncionais para aprimorar as medidas de segurança de TI e simplificar as operações.
           </BioSection>
           <br />
           
           <BioSection>
             <BioYear>2023</BioYear>
-            Trabalhei na <strong>Accenture Brasil</strong>, como desenvolvedor Backend Python. Foi uma experiência incrível poder trabalhar em uma empresa gigante, onde pude desenvolver e entender como grandes empresas funcionam.
+            Trabalhei na <strong>Accenture Brasil</strong>, como desenvolvedor Backend Python. 
+            Em minha função como desenvolvedor Python na Accenture Brasil, liderei a transformação digital de empresas desenvolvendo APIs em Python usando Flask e Django. 
+            Fiz a integração com o Pipefy, gerenciei servidores GCP, criei consultas GraphQL, projetei Webhooks para interação com CRM e criei pipelines de CI/CD usando o GitHub Actions.
           </BioSection>
           <br />
           
           <BioSection>
-            <BioYear>2024 - Presente</BioYear>
-            Atualmente, trabalho na <strong>Medens</strong>, onde faço manutenção e desenvolvimento de projetos em <strong>Laravel/PHP</strong>. Também estou envolvido em iniciativas de <strong>Inteligência Artificial (IA)</strong>, aplicando minhas habilidades para melhorar a eficiência e inovação dos sistemas em que trabalho.
+            <BioYear>2024</BioYear>
+            Atualmente, trabalho na <strong>Medens</strong>, onde faço manutenção e desenvolvimento de projetos em <strong>Laravel/PHP</strong>.
+            Também estou envolvido em iniciativas de <strong>Inteligência Artificial (IA)</strong>, aplicando minhas habilidades para melhorar a eficiência e inovação dos sistemas em que trabalho.
+            Responsável pela manutenção do sistema Mega ERP com Angular e PHP, aumentando a eficiência da equipe comercial por meio de projetos de IA
+            Criei consultas Oracle PLSQL e orquestrou contêineres Docker para CI/CD com fluxo de trabalho do GitHub.
           </BioSection>
         </Section>
 
@@ -207,13 +188,13 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.instagram.com/one_eye_nigth/" target="_blank">
+            <Link href="https://www.linkedin.com/in/jonathan-ponciano-silva/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @one_eye_nigth
+                Jonathan Ponciano
               </Button>
             </Link>
           </ListItem>
@@ -233,9 +214,9 @@ const Home = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<PhoneIcon />}
+                leftIcon={<IoLogoWhatsapp/>}
               >
-                Whatsapp: (11)988661865
+                +5511988661865
               </Button>
             </Link>
           </ListItem>
