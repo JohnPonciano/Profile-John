@@ -10,11 +10,11 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon, PhoneIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io5'
 import Image from 'next/image'
 import { Analytics } from "@vercel/analytics/react"
 const ProfileImage = chakra(Image, {
