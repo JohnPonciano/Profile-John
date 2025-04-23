@@ -15,16 +15,25 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Jonathan Ponciano" />
+        <meta name="description" content="Jonathan Ponciano - Desenvolvedor de Software & Especialista em Segurança da Informação. Portfólio com projetos em React, Node.js, Python e mais." />
         <meta name="author" content="Jonathan Ponciano" />
-        <meta name="author" content="hakku001" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="Jonathan Ponciano" />
-        <meta property="og:site_name" content="Jonathan Ponciano" />
-        <meta name="og:title" content="Jonathan Ponciano" />
+        <meta name="keywords" content="desenvolvedor, software, segurança da informação, backend, frontend, fullstack, react, javascript, python, php" />
+        
+        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <title>Jonathan Ponciano - Homepage</title>
+        <meta property="og:url" content="https://www.johnponciano.com.br" />
+        <meta property="og:title" content="Jonathan Ponciano - Desenvolvedor de Software" />
+        <meta property="og:description" content="Portfólio profissional com projetos em React, Node.js, Python e mais. Especialista em desenvolvimento web e segurança da informação." />
+        <meta property="og:image" content="https://www.johnponciano.com.br/og-image.jpg" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.johnponciano.com.br" />
+        <meta property="twitter:title" content="Jonathan Ponciano - Desenvolvedor de Software" />
+        <meta property="twitter:description" content="Portfólio profissional com projetos em React, Node.js, Python e mais. Especialista em desenvolvimento web e segurança da informação." />
+        <meta property="twitter:image" content="https://www.johnponciano.com.br/og-image.jpg" />
+
+        <title>Jonathan Ponciano - Desenvolvedor de Software</title>
       </Head>
 
       <NavBar path={router.asPath} />

@@ -4,11 +4,11 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import { Analytics } from "@vercel/analytics/react"
 
-import thumbFourPainters from '../public/images/works/newimg/walletpass.png'
-import thumbInetTCP from '../public/images/works/newimg/InetCHAT.png'
-import thumbWordpressProject from '../public/images/works/newimg/wordpressproject.png'
-import thumbWordpressProject2 from '../public/images/works/newimg/wordpressproject2.png'
+import thumbWalletPass from '../public/images/works/newimg/walletpass-preview.png'
+import justoprecoPreview from '../public/images/works/newimg/justopreco-preview.png'
 import medensproject from '../public/images/works/newimg/medensproject.png'
+import expoRetroGamesItu from '../public/images/works/newimg/expoRetroGamesItu.png'
+import xunseenPreview from '../public/images/works/newimg/xunseen-preview.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -18,8 +18,7 @@ const Works = () => (
         Works
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 1
-      ]} gap={6}>
+      <SimpleGrid columns={[1, 1, 1]} gap={6}>
 
         <Section>
           <WorkGridItem
@@ -27,15 +26,25 @@ const Works = () => (
             title="Medens"
             thumbnail={medensproject}
           >
-            Um novo respiro para uma nosa marca
+            Um novo respiro para uma nossa marca
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="Wallet-Pass"
-            thumbnail={thumbFourPainters}
+            id="expoRetroGamesItu"
+            title="ExpoRetroGamesItu"
+            thumbnail={expoRetroGamesItu}
+          >
+            Plataforma para exposição de jogos retrô em Itu
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="walletpass"
+            title="WalletPass"
+            thumbnail={thumbWalletPass}
           >
             Armazena e criptografa suas senhas, uma carteira de senhas seguras
           </WorkGridItem>
@@ -43,45 +52,25 @@ const Works = () => (
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="inetpy"
-            title="InetChat-TCP"
-            thumbnail={thumbInetTCP}
+            id="xunseen"
+            title="Xunseen"
+            thumbnail={xunseenPreview}
           >
-            Pequeno sistema de chat tcp, com suporte ao ngrok
+            Plataforma para freelancing e serviços digitais
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
-
           <WorkGridItem
-          id="wordpressproject"  
-          title="Thanks Mother Nature"
-          thumbnail={thumbWordpressProject}
+            id="justopreco"
+            title="JustoPreço"
+            thumbnail={justoprecoPreview}
           >
-            Como o WordPress não é extensivamente usado no meio de desenvolvimento, 
-            criei este projeto rápido e elegante para demonstrar como pode ser útil para pequenos projetos.
+            Plataforma para comparação de preços e ofertas
           </WorkGridItem>
-
-        </Section>
-
-        <Section delay={0.1}>
-
-        <WorkGridItem
-        id="wordpressproject2"  
-        title="Kuvshnov Gallery"
-        thumbnail={thumbWordpressProject2}
-        >
-          Foi apenas um experimento um pouco mais minimalista e artistico, 
-      onde eu crio uma pequena galeria para um dos meu artistas preferidos atuais.pequenos projetos.
-        </WorkGridItem>
-
         </Section>
         
       </SimpleGrid>
-
-
-     
-
 
     </Container>
   </Layout>

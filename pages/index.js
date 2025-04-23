@@ -32,7 +32,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, Sou um dev backend e apaixonado por programação e culinária.
+        Hello, Sou um desenvolvedor de software e especialista em segurança da informação.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -40,7 +40,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Jonathan Ponciano
           </Heading>
-          <p>Backend Developer ( Programar e Cozinhar )</p>
+          <p>Desenvolvedor de Software & Especialista em Segurança da Informação</p>
         </Box>
         <Box
           flexShrink={0}
@@ -77,15 +77,8 @@ const Home = () => (
 
         <BioSection>
           <p>
-          Sou desenvolvedor de software e especialista em segurança da informação com experiência sólida em
-programação, análise de vulnerabilidades e implementação de soluções tecnológicas para empresas. 
-</p>
-<p>Minha trajetória começou em datacenters, o que me deu uma base prática em infraestrutura de TI, evoluindo para projetos que integram sistemas de alta performance e segurança.</p>
-        <br></br>
-        <p>
-        Trabalho com desenvolvimento de sites/softwares, configuração de ERPs , implementação de pontos de
-venda com suporte a pagamentos em Bitcoin e otimização de processos para negócios. Meu foco é entregar soluções personalizadas, práticas e inovadoras que atendam às necessidades dos clientes.
-        </p>
+          Desenvolvedor Backend | DevOps | Python, Elixir, Node.js | CI/CD, Docker e sistemas escaláveis
+          </p>
         </BioSection>
         <br></br>
       </Section>
@@ -110,28 +103,30 @@ venda com suporte a pagamentos em Bitcoin e otimização de processos para negó
           </Heading>
           
           <BioSection>
-            <BioYear>2020</BioYear>
-            Trabalhei na <strong>Prefeitura da Estância Turística de Itu</strong>. Além de fornecer suporte e infraestrutura, aprendi muito sobre servidores, segurança e práticas de DevOps.
-            Gerenciamento de infraestrutura e segurança cibernética, supervisionando servidores em vmware, implementando soluções SOC/SIEM, garantindo a conformidade e otimizando sistemas.
-            Forneci suporte para operações seguras, garantindo o bom funcionamento dos sistemas de TI.
-            Colaborei com equipes multifuncionais para aprimorar as medidas de segurança de TI e simplificar as operações.
+            <BioYear>2024-2025</BioYear>
+            Trabalhei na <strong>Medens</strong> como <strong>Desenvolvedor Full Stack</strong>.
+            Mantive e evoluí o sistema Mega ERP com Angular e PHP, otimizando a rotina da equipe comercial.
+            Desenvolvi um chatbot de atendimento que reduziu o tempo médio de resposta em 40%.
+            Criei uma IA de apoio técnico que reduziu em 50% a curva de aprendizado das novas vendedoras.
+            Implementei consultas Oracle PL/SQL e pipelines CI/CD com Docker e GitHub Actions, reduzindo o tempo de deploy em 70%.
           </BioSection>
           <br />
           
           <BioSection>
-            <BioYear>2023</BioYear>
-            Trabalhei na <strong>Accenture Brasil</strong>, como desenvolvedor Backend Python. 
-            Em minha função como desenvolvedor Python na Accenture Brasil, liderei a transformação digital de empresas desenvolvendo APIs em Python usando Flask e Django. 
-            Fiz a integração com o Pipefy, gerenciei servidores GCP, criei consultas GraphQL, projetei Webhooks para interação com CRM e criei pipelines de CI/CD usando o GitHub Actions.
+            <BioYear>2022-2023</BioYear>
+            Trabalhei na <strong>Accenture Brasil</strong> como <strong>Desenvolvedor Python</strong>.
+            Desenvolvi APIs com Flask e Django para transformação digital de grandes empresas.
+            Integrei plataformas como Pipefy e CRMs via Webhooks e GraphQL, automatizando fluxos com ganhos de até 35% em eficiência.
+            Gerenciei infraestrutura em GCP e pipelines CI/CD com GitHub Actions, reduzindo o tempo de entrega em 60%.
           </BioSection>
           <br />
           
           <BioSection>
-            <BioYear>2024</BioYear>
-            Atualmente, trabalho na <strong>Medens</strong>, onde faço manutenção e desenvolvimento de projetos em <strong>Laravel/PHP</strong>.
-            Também estou envolvido em iniciativas de <strong>Inteligência Artificial (IA)</strong>, aplicando minhas habilidades para melhorar a eficiência e inovação dos sistemas em que trabalho.
-            Responsável pela manutenção do sistema Mega ERP com Angular e PHP, aumentando a eficiência da equipe comercial por meio de projetos de IA
-            Criei consultas Oracle PLSQL e orquestrou contêineres Docker para CI/CD com fluxo de trabalho do GitHub.
+            <BioYear>2020-2022</BioYear>
+            Trabalhei na <strong>Prefeitura de Itu</strong> como <strong>Tecnólogo em Gestão de TI</strong>.
+            Gerenciei infraestrutura e segurança cibernética com VMware, SOC/SIEM e políticas de conformidade.
+            Reduzi o tempo de resposta a incidentes em mais de 60% com soluções de monitoramento.
+            Atuei com times multidisciplinares para simplificar a infraestrutura e garantir a continuidade operacional.
           </BioSection>
         </Section>
 
