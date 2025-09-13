@@ -78,9 +78,11 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Projetos
           </LinkItem>
-          {/* <LinkItem href="https://johnponciano.github.io/simplesescovadordebits/public/">Blog</LinkItem> */}
+          <LinkItem href="https://relevance.substack.com" path={path} target="_blank">
+            Blog
+          </LinkItem>
           <LinkItem
             target="_blank"
             href="#"
@@ -106,13 +108,13 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  About
+                  Sobre
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  Works
+                  Projetos
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://johnponciano.github.io/simplesescovadordebits/public/">
-                Blog
+                <MenuItem as={MenuLink} href="https://relevance.substack.com" target="_blank">
+                  Blog
                 </MenuItem>
               </MenuList>
             </Menu>

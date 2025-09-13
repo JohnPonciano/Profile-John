@@ -8,13 +8,18 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Badge,
+  Flex,
+  SimpleGrid,
+  Text
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io5'
+import { IoLogoRss } from 'react-icons/io5'
 import Image from 'next/image'
 import { Analytics } from "@vercel/analytics/react"
 const ProfileImage = chakra(Image, {
@@ -69,19 +74,73 @@ const Home = () => (
         </Box>
       </Box>
 
-      <Section delay={0.1}>
-        <Analytics />
-        <Heading as="h3" variant="section-title">
-          Sobre mim
-        </Heading>
+       <Section delay={0.1}>
+         <Analytics />
+         <Heading as="h3" variant="section-title">
+           Sobre mim
+         </Heading>
 
-        <BioSection>
-          <p>
-          Desenvolvedor Backend | DevOps | Python, Elixir, Node.js | CI/CD, Docker e sistemas escaláveis
-          </p>
-        </BioSection>
-        <br></br>
-      </Section>
+         <BioSection>
+           <p>
+             Sou desenvolvedor de software com <strong>pézinho em segurança da informação</strong>, com paixão por construir 
+             soluções tecnológicas robustas, seguras e escaláveis. Tenho experiência em backend com 
+             <strong>Python, Java, Go e Elixir</strong>, além de domínio em frameworks modernos como Django, FastAPI, 
+             Spring Boot e arquitetura de microsserviços.
+           </p>
+           <p>
+             Já atuei em projetos de alto impacto, desde integração com sistemas legados até a construção de APIs resilientes 
+             e pipelines de CI/CD. Também tenho forte atuação em <strong>segurança ofensiva</strong> e análise de vulnerabilidades, 
+             combinando teoria sólida com prática em ferramentas como Burp Suite, Nmap, Metasploit e Wireshark.
+           </p>
+           <p>
+             Sou movido por desafios e estou sempre buscando crescer, tanto tecnicamente quanto como comunicador e líder. 
+             Meu objetivo é evoluir constantemente para, um dia, liderar uma equipe que valorize colaboração, excelência técnica 
+             e aprendizado contínuo. Nas horas vagas, gosto de cozinhar, jogar e transformar ideias criativas em projetos reais.
+           </p>
+         </BioSection>
+         <br></br>
+       </Section>
+
+       <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Bio
+          </Heading>
+          
+          <BioSection>
+            <BioYear>2025-Presente</BioYear>
+            Trabalho como <strong>Freelancer</strong> na <strong>X UNSEEN</strong> como <strong>Back End Developer | DevOps | CyberSec</strong>.
+            Consultoria e desenvolvimento para empresas de diferentes segmentos, unindo engenharia de software, 
+            infraestrutura e segurança da informação. Projetos recentes incluem Recrutei (PHP/Laravel) e Kora Saúde (DevOps/CI/CD).
+          </BioSection>
+          <br />
+          
+          <BioSection>
+            <BioYear>2024-2025</BioYear>
+            Trabalhei na <strong>Medens</strong> como <strong>System Analyst</strong>.
+            Mantive e evoluí sistemas internos com Angular e PHP, otimizando a rotina comercial.
+            Desenvolvi um chatbot interno que reduziu o tempo médio de resposta em <strong>40%</strong>.
+            Criei uma IA de apoio técnico que reduziu em <strong>50%</strong> a curva de aprendizado das novas vendedoras.
+            Implementei pipelines CI/CD com Docker e GitHub Actions, reduzindo o tempo de deploy em <strong>70%</strong>.
+          </BioSection>
+          <br />
+          
+          <BioSection>
+            <BioYear>2022-2023</BioYear>
+            Trabalhei na <strong>Accenture Brasil</strong> como <strong>Python Developer</strong>.
+            Desenvolvi APIs robustas com Flask e Django para transformação digital de grandes empresas.
+            Integrei plataformas como Pipefy e CRMs via Webhooks e GraphQL, automatizando fluxos com ganhos de até <strong>35%</strong> em eficiência.
+            Gerenciei infraestrutura em GCP e pipelines CI/CD com GitHub Actions, reduzindo o tempo de entrega em <strong>60%</strong>.
+          </BioSection>
+          <br />
+          
+          <BioSection>
+            <BioYear>2020-2022</BioYear>
+            Trabalhei na <strong>Prefeitura de Itu</strong> como <strong>Tecnólogo em Gestão de TI</strong>.
+            Gerenciei infraestrutura e segurança cibernética com VMware, SOC/SIEM e políticas de conformidade.
+            Reduzi o tempo de resposta a incidentes em mais de <strong>60%</strong> com soluções de monitoramento.
+            Atuei com times multidisciplinares para simplificar a infraestrutura e garantir a continuidade operacional.
+          </BioSection>
+        </Section>
 
       <Section delay={0.3}> 
         <Box align="center" my={4}>
@@ -91,79 +150,71 @@ const Home = () => (
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
+            size="lg"
+            mb={4}
           >
-            Meus Projetos
+            Projetos
+          </Button>
+          <br />
+          <Button
+            as={Link}
+            href="https://api.whatsapp.com/send?phone=5511988661865"
+            target="_blank"
+            leftIcon={<IoLogoWhatsapp />}
+            colorScheme="green"
+            variant="outline"
+          >
+            Disponível para conversar
           </Button>
         </Box>
       </Section>
 
-      <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            Bio
-          </Heading>
-          
-          <BioSection>
-            <BioYear>2024-2025</BioYear>
-            Trabalhei na <strong>Medens</strong> como <strong>Desenvolvedor Full Stack</strong>.
-            Mantive e evoluí o sistema Mega ERP com Angular e PHP, otimizando a rotina da equipe comercial.
-            Desenvolvi um chatbot de atendimento que reduziu o tempo médio de resposta em 40%.
-            Criei uma IA de apoio técnico que reduziu em 50% a curva de aprendizado das novas vendedoras.
-            Implementei consultas Oracle PL/SQL e pipelines CI/CD com Docker e GitHub Actions, reduzindo o tempo de deploy em 70%.
-          </BioSection>
-          <br />
-          
-          <BioSection>
-            <BioYear>2022-2023</BioYear>
-            Trabalhei na <strong>Accenture Brasil</strong> como <strong>Desenvolvedor Python</strong>.
-            Desenvolvi APIs com Flask e Django para transformação digital de grandes empresas.
-            Integrei plataformas como Pipefy e CRMs via Webhooks e GraphQL, automatizando fluxos com ganhos de até 35% em eficiência.
-            Gerenciei infraestrutura em GCP e pipelines CI/CD com GitHub Actions, reduzindo o tempo de entrega em 60%.
-          </BioSection>
-          <br />
-          
-          <BioSection>
-            <BioYear>2020-2022</BioYear>
-            Trabalhei na <strong>Prefeitura de Itu</strong> como <strong>Tecnólogo em Gestão de TI</strong>.
-            Gerenciei infraestrutura e segurança cibernética com VMware, SOC/SIEM e políticas de conformidade.
-            Reduzi o tempo de resposta a incidentes em mais de 60% com soluções de monitoramento.
-            Atuei com times multidisciplinares para simplificar a infraestrutura e garantir a continuidade operacional.
-          </BioSection>
-        </Section>
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+          Skills & Tecnologias
+        </Heading>
+        
+        <SimpleGrid columns={[1, 2]} gap={6}>
+          {/* Linguagens e Frameworks */}
+          <Box>
+            <Text fontWeight="bold" mb={3} color="teal.500">💻 Linguagens & Frameworks</Text>
+            <Flex wrap="wrap" gap={2}>
+              {['Python', 'Java', 'Go', 'Elixir', 'JavaScript', 'Node.js', 'PHP', 'Laravel', 'Django', 'FastAPI', 'Spring Boot'].map(skill => (
+                <Badge key={skill} colorScheme="blue" variant="subtle">{skill}</Badge>
+              ))}
+            </Flex>
+          </Box>
 
+          {/* DevOps e Infraestrutura */}
+          <Box>
+            <Text fontWeight="bold" mb={3} color="teal.500">🚀 DevOps & Infraestrutura</Text>
+            <Flex wrap="wrap" gap={2}>
+              {['Docker', 'CI/CD', 'Jenkins', 'GitHub Actions', 'AWS', 'GCP', 'Kubernetes', 'Git', 'Grafana', 'Redis', 'RabbitMQ'].map(skill => (
+                <Badge key={skill} colorScheme="orange" variant="subtle">{skill}</Badge>
+              ))}
+            </Flex>
+          </Box>
 
-      <Section delay={0.2}>
-      <Heading as="h3" variant="section-title">
-    Skills
-  </Heading>
-  
-  <BioSection>
-    <BioYear>Linguagens e Frameworks</BioYear>
-    <p>HTML/CSS, Python (Django/Flask), JavaScript (Node.js/Next.js), PHP (Laravel), MySQL, PostgreSQL, Bash, PowerShell</p>
-  </BioSection>
-  <br />
-  
-  <BioSection>
-    <BioYear>Ferramentas e Tecnologias</BioYear>
-    <p>Docker, CI/CD (Jenkins, Rancher), AWS, GCP, Git, Grafana, Redis, RabbitMQ</p>
-  </BioSection>
-  <br />
+          {/* CyberSec e Segurança */}
+          <Box>
+            <Text fontWeight="bold" mb={3} color="teal.500">🔒 CyberSec & Segurança</Text>
+            <Flex wrap="wrap" gap={2}>
+              {['Burp Suite', 'Nmap', 'Metasploit', 'Wireshark', 'SOC/SIEM', 'VMware', 'Hyper-V', 'Proxmox', 'Redes', 'TCP/IP'].map(skill => (
+                <Badge key={skill} colorScheme="red" variant="subtle">{skill}</Badge>
+              ))}
+            </Flex>
+          </Box>
 
-  <BioSection>
-    <BioYear>Práticas de DevOps e Infraestrutura</BioYear>
-    <p>Configuração e manutenção de servidores Linux/Windows, automação de deploy, monitoramento de aplicações, práticas de segurança (Cibersegurança)</p>
-  </BioSection>
-  <br />
-  
-  <BioSection>
-    <BioYear>Inteligência Artificial</BioYear>
-    <p>Experiência com algoritmos de IA e machine learning, implementação de soluções inteligentes e automação de processos.</p>
-  </BioSection>
-  <br />
-  
-  <BioSection>
-    <BioYear>Outras Competências</BioYear>
-    <p>Suporte e infraestrutura, gerenciamento de projetos, trabalho em equipe, comunicação eficaz, resolução de problemas técnicos complexos.</p>
-  </BioSection>
+          {/* IA e Soft Skills */}
+          <Box>
+            <Text fontWeight="bold" mb={3} color="teal.500">🤖 IA & Soft Skills</Text>
+            <Flex wrap="wrap" gap={2}>
+              {['Machine Learning', 'Chatbots', 'Automação', 'Liderança Técnica', 'Trabalho em Equipe', 'Comunicação', 'Resolução de Problemas'].map(skill => (
+                <Badge key={skill} colorScheme="purple" variant="subtle">{skill}</Badge>
+              ))}
+            </Flex>
+          </Box>
+        </SimpleGrid>
       </Section>
 
       <Section delay={0.3}>
@@ -212,6 +263,17 @@ const Home = () => (
                 leftIcon={<IoLogoWhatsapp/>}
               >
                 +5511988661865
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://relevance.substack.com" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoRss />}
+              >
+                Blog & Artigos
               </Button>
             </Link>
           </ListItem>

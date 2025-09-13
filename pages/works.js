@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box, Text, Badge } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -15,58 +15,86 @@ const Works = () => (
     <Analytics />
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Projetos Corporativos & Freelancing
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 1]} gap={6}>
+      <Text mb={6} color="gray.600">
+        Projetos desenvolvidos em ambientes corporativos e freelancing, 
+        focando em soluções escaláveis e de alto impacto.
+      </Text>
 
+      <SimpleGrid columns={[1, 1, 1]} gap={6}>
+        {/* Projeto Atual - Destaque */}
         <Section>
-          <WorkGridItem
-            id="medensproject"
-            title="Medens"
-            thumbnail={medensproject}
-          >
-            Um novo respiro para uma nossa marca
-          </WorkGridItem>
+          <Box position="relative">
+            <Badge 
+              position="absolute" 
+              top={2} 
+              right={2} 
+              colorScheme="green" 
+              zIndex={1}
+            >
+              Atual
+            </Badge>
+            <WorkGridItem
+              id="xunseen"
+              title="X UNSEEN"
+              thumbnail={xunseenPreview}
+            >
+              Plataforma para freelancing e serviços digitais - Projeto atual como Backend Developer
+            </WorkGridItem>
+          </Box>
         </Section>
 
+        {/* Projetos Corporativos */}
         <Section delay={0.1}>
+          <Box position="relative">
+            <Badge 
+              position="absolute" 
+              top={2} 
+              right={2} 
+              colorScheme="blue" 
+              zIndex={1}
+            >
+              Corporativo
+            </Badge>
+            <WorkGridItem
+              id="medensproject"
+              title="Medens"
+              thumbnail={medensproject}
+            >
+              Sistema interno com Angular e PHP - Redução de 70% no tempo de deploy
+            </WorkGridItem>
+          </Box>
+        </Section>
+
+        <Section delay={0.2}>
           <WorkGridItem
             id="expoRetroGamesItu"
             title="ExpoRetroGamesItu"
             thumbnail={expoRetroGamesItu}
           >
-            Plataforma para exposição de jogos retrô em Itu
+            Plataforma para exposição de jogos retrô em Itu - Projeto público
           </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.3}>
           <WorkGridItem
             id="walletpass"
             title="WalletPass"
             thumbnail={thumbWalletPass}
           >
-            Armazena e criptografa suas senhas, uma carteira de senhas seguras
+            Carteira de senhas seguras com criptografia - Projeto pessoal
           </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="xunseen"
-            title="Xunseen"
-            thumbnail={xunseenPreview}
-          >
-            Plataforma para freelancing e serviços digitais
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
+        <Section delay={0.4}>
           <WorkGridItem
             id="justopreco"
             title="JustoPreço"
             thumbnail={justoprecoPreview}
           >
-            Plataforma para comparação de preços e ofertas
+            Plataforma para comparação de preços e ofertas - Freelancing
           </WorkGridItem>
         </Section>
         
