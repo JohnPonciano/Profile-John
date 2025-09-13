@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "Jonathan Ponciano",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
     "@chakra-ui/react": "^2.4.6",
