@@ -6,7 +6,6 @@ import {
   Box,
   Button,
   useColorModeValue,
-  chakra,
   Text,
   VStack,
   HStack,
@@ -31,7 +30,6 @@ const Home = () => {
   const whiteAlpha500 = useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')
   const whiteAlpha200 = useColorModeValue('whiteAlpha.200', 'whiteAlpha.100')
   const gray200 = useColorModeValue('gray.200', 'gray.700')
-  const gray800 = useColorModeValue('gray.800', 'gray.700')
 
   return (
     <Layout>
