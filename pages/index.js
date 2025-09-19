@@ -1,4 +1,3 @@
-import NextLink from 'next/link'
 import { useState } from 'react'
 import {
   Link,
@@ -6,37 +5,33 @@ import {
   Heading,
   Box,
   Button,
-  List,
-  ListItem,
   useColorModeValue,
   chakra,
-  Badge,
-  Flex,
-  SimpleGrid,
   Text,
   VStack,
   HStack,
   Icon,
-  Center,
-  Grid,
-  GridItem
+  Center
 } from '@chakra-ui/react'
-import dynamic from 'next/dynamic'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { EmailIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io5'
 import { IoLogoRss } from 'react-icons/io5'
-import Image from 'next/image'
 import { Analytics } from "@vercel/analytics/react"
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
 
 const Home = () => {
   const [selectedExperience, setSelectedExperience] = useState('xunseen')
+  
+  // Hooks must be called at the top level
+  const gray600 = useColorModeValue('gray.600', 'gray.400')
+  const gray700 = useColorModeValue('gray.700', 'gray.300')
+  const teal500 = useColorModeValue('teal.500', 'teal.500')
+  const whiteAlpha500 = useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')
+  const whiteAlpha200 = useColorModeValue('whiteAlpha.200', 'whiteAlpha.100')
+  const gray200 = useColorModeValue('gray.200', 'gray.700')
+  const gray800 = useColorModeValue('gray.800', 'gray.700')
 
   return (
     <Layout>
@@ -44,9 +39,9 @@ const Home = () => {
       {/* Hero Section */}
       <Center minH="80vh" flexDirection="column" textAlign="center">
         <VStack spacing={6} mb={8}>
-          <Text fontSize="lg" color={useColorModeValue('gray.600', 'gray.400')}>
-            Oi! meu nome é
-          </Text>
+            <Text fontSize="lg" color={gray600}>
+              Oi! meu nome é
+            </Text>
           <Heading 
             as="h1" 
             fontSize={{ base: '4xl', md: '6xl' }} 
@@ -56,10 +51,10 @@ const Home = () => {
           >
             Jonathan Ponciano
           </Heading>
-          <Text fontSize="xl" color={useColorModeValue('gray.700', 'gray.300')} maxW="2xl">
+          <Text fontSize="xl" color={gray700} maxW="2xl">
             Um Engenheiro de Software ajudando pessoas na internet.
             <br />
-            <Text as="span" color="teal.500" fontWeight="medium">
+            <Text as="span" color={teal500} fontWeight="medium">
               Pessoas são o propósito e paixão é o combustível.
             </Text> ❤️‍🔥
           </Text>
@@ -120,7 +115,7 @@ const Home = () => {
             
               p={3}
               borderRadius="lg"
-              bg={selectedExperience === 'xunseen' ? useColorModeValue('whiteAlpha.500', 'whiteAlpha.200') : 'transparent'}
+              bg={selectedExperience === 'xunseen' ? whiteAlpha500 : 'transparent'}
               css={{ backdropFilter: selectedExperience === 'xunseen' ? 'blur(10px)' : 'none' }}
               border="1px solid"
               borderColor={selectedExperience === 'xunseen' ? 'green.300' : 'green.200'}
@@ -142,7 +137,7 @@ const Home = () => {
             <Box
               p={3}
               borderRadius="lg"
-              bg={selectedExperience === 'medens' ? useColorModeValue('whiteAlpha.500', 'whiteAlpha.200') : 'transparent'}
+              bg={selectedExperience === 'medens' ? whiteAlpha500 : 'transparent'}
               css={{ backdropFilter: selectedExperience === 'medens' ? 'blur(10px)' : 'none' }}
               border="1px solid"
               borderColor={selectedExperience === 'medens' ? 'teal.300' : 'teal.200'}
@@ -163,7 +158,7 @@ const Home = () => {
             <Box
               p={3}
               borderRadius="lg"
-              bg={selectedExperience === 'accenture' ? useColorModeValue('whiteAlpha.500', 'whiteAlpha.200') : 'transparent'}
+              bg={selectedExperience === 'accenture' ? whiteAlpha500 : 'transparent'}
               css={{ backdropFilter: selectedExperience === 'accenture' ? 'blur(10px)' : 'none' }}
               border="1px solid"
               borderColor={selectedExperience === 'accenture' ? 'teal.300' : 'teal.200'}
@@ -184,7 +179,7 @@ const Home = () => {
             <Box
               p={3}
               borderRadius="lg"
-              bg={selectedExperience === 'prefeitura' ? useColorModeValue('whiteAlpha.500', 'whiteAlpha.200') : 'transparent'}
+              bg={selectedExperience === 'prefeitura' ? whiteAlpha500 : 'transparent'}
               css={{ backdropFilter: selectedExperience === 'prefeitura' ? 'blur(10px)' : 'none' }}
               border="1px solid"
               borderColor={selectedExperience === 'prefeitura' ? 'teal.300' : 'teal.200'}
@@ -206,18 +201,18 @@ const Home = () => {
           {/* Detalhes da Experiência Selecionada */}
           <Box
             p={4}
-            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+            bg={whiteAlpha500}
             borderRadius="lg"
             css={{ backdropFilter: 'blur(10px)' }}
             border="1px solid"
-            borderColor={useColorModeValue('whiteAlpha.200', 'whiteAlpha.100')}
+            borderColor={whiteAlpha200}
           >
             {selectedExperience === 'xunseen' && (
               <Box>
                 <Heading as="h4" fontSize="lg" mb={4} color="teal.600">
                   Software Engineer @ X UNSEEN
                 </Heading>
-                <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')} mb={4}>
+                <Text fontSize="sm" color={gray600} mb={4}>
                   JAN 2025 - PRESENTE | Freelancer | Back End Developer | DevOps | CyberSec
                 </Text>
                 
@@ -273,7 +268,7 @@ const Home = () => {
                 <Heading as="h4" fontSize="lg" mb={4} color="teal.600">
                   System Analyst @ Medens
                 </Heading>
-                <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')} mb={4}>
+                <Text fontSize="sm" color={gray600} mb={4}>
                   JAN 2024 - DEZ 2024 | System Analyst
                 </Text>
                 
@@ -293,7 +288,7 @@ const Home = () => {
                 <Heading as="h4" fontSize="lg" mb={4} color="teal.600">
                   Python Developer @ Accenture Brasil
                 </Heading>
-                <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')} mb={4}>
+                <Text fontSize="sm" color={gray600} mb={4}>
                   MAR 2022 - DEZ 2023 | Python Developer
                 </Text>
                 
@@ -313,7 +308,7 @@ const Home = () => {
                 <Heading as="h4" fontSize="lg" mb={4} color="teal.600">
                   Tecnólogo em Gestão de TI @ Prefeitura de Itu
                 </Heading>
-                <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')} mb={4}>
+                <Text fontSize="sm" color={gray600} mb={4}>
                   JAN 2020 - DEZ 2022 | Tecnólogo em Gestão de TI
                 </Text>
                 
@@ -352,11 +347,11 @@ const Home = () => {
       </Section>
 
       {/* Footer */}
-      <Box mt={20} textAlign="center" py={8} borderTop="1px" borderColor={useColorModeValue('gray.200', 'gray.700')}>
-        <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')}>
+      <Box mt={20} textAlign="center" py={8} borderTop="1px" borderColor={gray200}>
+        <Text fontSize="sm" color={gray600}>
           Criado por <Text as="span" fontWeight="bold" color="teal.500">Jonathan Ponciano</Text> usando NextJS e Chakra UI.
         </Text>
-        <Text fontSize="sm" color={useColorModeValue('gray.600', 'gray.400')} mt={2}>
+        <Text fontSize="sm" color={gray600} mt={2}>
           © Todos os direitos reservados.
         </Text>
       </Box>
