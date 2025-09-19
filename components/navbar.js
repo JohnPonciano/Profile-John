@@ -16,6 +16,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
+
 import ThemeToggleButton from './theme-toggle-button'
 
 
@@ -28,8 +29,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#202023' : inactiveColor}
+      bg={active ? 'brand.100' : undefined}
+      color={active ? 'brand.800' : inactiveColor}
       target={target}
       {...props}
     >
@@ -50,8 +51,8 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
+      bg={useColorModeValue('rgba(255, 255, 255, 0.8)', 'rgba(10, 10, 10, 0.8)')}
+      css={{ backdropFilter: 'blur(20px)' }}
       zIndex={2}
       {...props}
     >
@@ -83,20 +84,23 @@ const Navbar = props => {
           <LinkItem href="https://relevance.substack.com" path={path} target="_blank">
             Blog
           </LinkItem>
-          <LinkItem
-            target="_blank"
-            href="#"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
+          <LinkItem href="https://www.linkedin.com/in/jonathan-ponciano-silva/" path={path} target="_blank">
+            LinkedIn
           </LinkItem>
+          
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
+          <Stack direction="row" spacing={2} align="center">
+            <Link
+              href="https://www.linkedin.com/in/jonathan-ponciano-silva/"
+              target="_blank"
+              _hover={{ transform: 'scale(1.1)' }}
+              transition="all 0.2s"
+            >
+            </Link>
+            <ThemeToggleButton />
+          </Stack>
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -115,6 +119,9 @@ const Navbar = props => {
                 </MenuItem>
                 <MenuItem as={MenuLink} href="https://relevance.substack.com" target="_blank">
                   Blog
+                </MenuItem>
+                <MenuItem as={MenuLink} href="https://www.linkedin.com/in/jonathan-ponciano-silva/" target="_blank">
+                  LinkedIn
                 </MenuItem>
               </MenuList>
             </Menu>
