@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos customizados */
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Efeito de cursor piscando */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+  background-color: #34d399; /* emerald-400 */
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937; /* gray-800 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563; /* gray-600 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; /* gray-500 */
+}
+
+/* Classes para sintaxe JSON */
+.json-key { color: #60a5fa; } /* blue-400 */
+.json-string { color: #34d399; } /* emerald-400 */
+.json-number { color: #facc15; } /* yellow-400 */
+.json-boolean { color: #c084fc; } /* purple-400 */
+.json-null { color: #9ca3af; } /* gray-400 */
+
+/* Links clicáveis no JSON */
+.json-link {
+  color: #34d399; /* emerald-400 */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.json-link:hover {
+  color: #6ee7b7; /* emerald-300 */
+  text-decoration: underline;
+}
+

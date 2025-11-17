@@ -14,8 +14,10 @@ export default class Document extends NextDocument {
           <meta name="author" content="Jonathan Ponciano" />
           <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
           <meta name="googlebot" content="index, follow" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="format-detection" content="telephone=no" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
           <link rel="canonical" href="https://profile-john.site/" />
           <meta name="geo.region" content="BR-SP" />
           <meta name="geo.placename" content="São Paulo" />
