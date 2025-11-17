@@ -272,7 +272,7 @@ export default function Home() {
       setChatMessages([])
     } else if (chatMessages.length === 0) {
       // Adiciona mensagem de boas-vindas ao chat se for a primeira vez
-      addMessageToChat('ai', '// Olá! Eu sou a Karen, assistente pessoal do Jonathan. 👋\n// Ele é meu chefe e eu adoro falar sobre o trabalho incrível que ele faz! e claro eu ajudo na medida do possivel \n// Pergunte-me qualquer coisa sobre o perfil profissional dele (ex: "Qual a experiência dele com Node.js?").')
+      addMessageToChat('ai', '// Olá! Eu sou a Karen, assistente pessoal do Jonathan. 👋\n// Ele é meu chefe e eu to aqui pra te ajudar e falar sobre o trabalho dele! \n// Pergunte-me qualquer coisa sobre o perfil profissional dele (ex: "Qual a experiência dele com Python e Node.js?").')
     }
   }
 
